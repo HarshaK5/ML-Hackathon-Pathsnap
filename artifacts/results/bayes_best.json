@@ -14,7 +14,7 @@
  "n_trials": 30,
  "n_complete": 23,
  "n_pruned": 7,
- "optimisation_seconds": 1947.7348358631134,
+ "optimisation_seconds": 1664.2998480796814,
  "sampler": "TPE (Optuna)",
  "pruner": "MedianPruner",
  "seed": 42

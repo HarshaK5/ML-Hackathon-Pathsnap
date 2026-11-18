@@ -1,0 +1,103 @@
+$ python scripts/04_bayes_opt.py auto 30
+tuning XGBoost trials 30
+[I 2026-11-18 11:42:07,936] A new study created in RDB with name: XGBoost_macroF1
+[I 2026-11-18 11:42:53,280] Trial 0 finished with value: 0.9289736366873023 and parameters: {'n_estimators': 300, 'learning_rate': 0.1, 'max_depth': 8, 'min_child_weight': 4.32845022129388, 'subsample': 0.8, 'colsample_bytree': 0.8, 'reg_lambda': 6.3512210106407005, 'reg_alpha': 0.847180141881998}. Best is trial 0 with value: 0.9289736366873023.
+trial   0 COMPLETE  value=0.92897 best=0.92897
+[I 2026-11-18 11:43:25,959] Trial 1 finished with value: 0.9266054928751698 and parameters: {'n_estimators': 350, 'learning_rate': 0.04296748115469074, 'max_depth': 4, 'min_child_weight': 1.2551115172973832, 'subsample': 0.9330880728874675, 'colsample_bytree': 0.8005575058716043, 'reg_lambda': 0.6796578090758157, 'reg_alpha': 0.0012087541473056963}. Best is trial 0 with value: 0.9289736366873023.
+trial   1 COMPLETE  value=0.92661 best=0.92897
+[I 2026-11-18 11:44:13,587] Trial 2 finished with value: 0.9281201457466551 and parameters: {'n_estimators': 500, 'learning_rate': 0.20396887264773383, 'max_depth': 5, 'min_child_weight': 2.03664420268309, 'subsample': 0.5917022549267169, 'colsample_bytree': 0.6521211214797689, 'reg_lambda': 0.12561043700013563, 'reg_alpha': 0.05342937261279776}. Best is trial 0 with value: 0.9289736366873023.
+trial   2 COMPLETE  value=0.92812 best=0.92897
+[I 2026-11-18 11:44:32,031] Trial 3 finished with value: 0.926966907897738 and parameters: {'n_estimators': 200, 'learning_rate': 0.12273661723331349, 'max_depth': 4, 'min_child_weight': 3.1357757322577435, 'subsample': 0.6831809216468459, 'colsample_bytree': 0.728034992108518, 'reg_lambda': 1.3826232179369866, 'reg_alpha': 0.006290644294586149}. Best is trial 0 with value: 0.9289736366873023.
+trial   3 COMPLETE  value=0.92697 best=0.92897
+[I 2026-11-18 11:44:55,578] Trial 4 finished with value: 0.9263569674223934 and parameters: {'n_estimators': 300, 'learning_rate': 0.11736424885649084, 'max_depth': 3, 'min_child_weight': 10.769622478263129, 'subsample': 0.5852620618436457, 'colsample_bytree': 0.5325257964926398, 'reg_lambda': 6.24513957474307, 'reg_alpha': 7.286653737491043}. Best is trial 0 with value: 0.9289736366873023.
+trial   4 COMPLETE  value=0.92636 best=0.92897
+[I 2026-11-18 11:45:27,167] Trial 5 finished with value: 0.9261804468229515 and parameters: {'n_estimators': 450, 'learning_rate': 0.06049716507542575, 'max_depth': 3, 'min_child_weight': 14.537555576161921, 'subsample': 0.7200762468698007, 'colsample_bytree': 0.5610191174223894, 'reg_lambda': 0.09565499215943825, 'reg_alpha': 0.0013726318898045872}. Best is trial 0 with value: 0.9289736366873023.
+trial   5 COMPLETE  value=0.92618 best=0.92897
+[I 2026-11-18 11:46:53,943] Trial 6 finished with value: 0.9294573950309643 and parameters: {'n_estimators': 500, 'learning_rate': 0.05443788406047074, 'max_depth': 9, 'min_child_weight': 3.3852267834519774, 'subsample': 0.7600340105889054, 'colsample_bytree': 0.7733551396716398, 'reg_lambda': 0.0054880470007660455, 'reg_alpha': 7.556810141274433}. Best is trial 6 with value: 0.9294573950309643.
+trial   6 COMPLETE  value=0.92946 best=0.92946
+[I 2026-11-18 11:48:07,104] Trial 7 finished with value: 0.9263864005177579 and parameters: {'n_estimators': 400, 'learning_rate': 0.2609877938553996, 'max_depth': 11, 'min_child_weight': 10.370844668954536, 'subsample': 0.9609371175115584, 'colsample_bytree': 0.5442462510259598, 'reg_lambda': 0.006080390190296602, 'reg_alpha': 0.0015167330688076208}. Best is trial 6 with value: 0.9294573950309643.
+trial   7 COMPLETE  value=0.92639 best=0.92946
+[I 2026-11-18 11:49:46,082] Trial 8 finished with value: 0.9298125226036598 and parameters: {'n_estimators': 500, 'learning_rate': 0.046758623760120195, 'max_depth': 11, 'min_child_weight': 5.385506806533289, 'subsample': 0.8140535170163485, 'colsample_bytree': 0.8886185629157466, 'reg_lambda': 0.2235725132937358, 'reg_alpha': 0.0014418961473459673}. Best is trial 8 with value: 0.9298125226036598.
+trial   8 COMPLETE  value=0.92981 best=0.92981
+[I 2026-11-18 11:50:07,156] Trial 9 pruned. 
+trial   9 PRUNED    value=0.93281 best=0.92981
+[I 2026-11-18 11:51:09,372] Trial 10 finished with value: 0.9290986623834371 and parameters: {'n_estimators': 450, 'learning_rate': 0.05648964992185436, 'max_depth': 7, 'min_child_weight': 6.950547846612642, 'subsample': 0.809099633673403, 'colsample_bytree': 0.9859207175470731, 'reg_lambda': 0.04344180215974623, 'reg_alpha': 0.0046132751651985614}. Best is trial 8 with value: 0.9298125226036598.
+trial  10 COMPLETE  value=0.92910 best=0.92981
+[I 2026-11-18 11:52:28,921] Trial 11 finished with value: 0.9296478586905593 and parameters: {'n_estimators': 450, 'learning_rate': 0.0503605162347715, 'max_depth': 8, 'min_child_weight': 2.1872752400124487, 'subsample': 0.778112534553406, 'colsample_bytree': 0.7156276217593551, 'reg_lambda': 0.022835339673161783, 'reg_alpha': 8.881103047411981}. Best is trial 8 with value: 0.9298125226036598.
+trial  11 COMPLETE  value=0.92965 best=0.92981
+[I 2026-11-18 11:54:11,184] Trial 12 finished with value: 0.9294208721052678 and parameters: {'n_estimators': 450, 'learning_rate': 0.051012426565754374, 'max_depth': 10, 'min_child_weight': 4.320519109000407, 'subsample': 0.8414677538536168, 'colsample_bytree': 0.9483855092963928, 'reg_lambda': 0.5954567701179969, 'reg_alpha': 8.509587297636433}. Best is trial 8 with value: 0.9298125226036598.
+trial  12 COMPLETE  value=0.92942 best=0.92981
+[I 2026-11-18 11:55:39,481] Trial 13 finished with value: 0.9290477091347882 and parameters: {'n_estimators': 500, 'learning_rate': 0.048053421496578645, 'max_depth': 10, 'min_child_weight': 4.497883128698297, 'subsample': 0.779478752075343, 'colsample_bytree': 0.8923611240978484, 'reg_lambda': 0.17520662704974949, 'reg_alpha': 0.14117022262399145}. Best is trial 8 with value: 0.9298125226036598.
+trial  13 COMPLETE  value=0.92905 best=0.92981
+[I 2026-11-18 11:56:34,125] Trial 14 finished with value: 0.9289785913733486 and parameters: {'n_estimators': 400, 'learning_rate': 0.04128279042364175, 'max_depth': 7, 'min_child_weight': 1.2704283676259358, 'subsample': 0.8785256346758565, 'colsample_bytree': 0.7320579645128431, 'reg_lambda': 0.03061118518643698, 'reg_alpha': 0.3825590941540389}. Best is trial 8 with value: 0.9298125226036598.
+trial  14 COMPLETE  value=0.92898 best=0.92981
+[I 2026-11-18 11:58:16,703] Trial 15 finished with value: 0.9295508350035853 and parameters: {'n_estimators': 500, 'learning_rate': 0.05469763004599906, 'max_depth': 11, 'min_child_weight': 3.9070672802187776, 'subsample': 0.9971521652228178, 'colsample_bytree': 0.9634794750749398, 'reg_lambda': 0.20594671325447514, 'reg_alpha': 0.340165919726359}. Best is trial 8 with value: 0.9298125226036598.
+trial  15 COMPLETE  value=0.92955 best=0.92981
+[I 2026-11-18 11:59:25,654] Trial 16 finished with value: 0.9289922441427769 and parameters: {'n_estimators': 500, 'learning_rate': 0.03323216281099113, 'max_depth': 7, 'min_child_weight': 2.9601054050105415, 'subsample': 0.7539632885273062, 'colsample_bytree': 0.9831673611714979, 'reg_lambda': 0.3308271036006331, 'reg_alpha': 0.00503759538991782}. Best is trial 8 with value: 0.9298125226036598.
+trial  16 COMPLETE  value=0.92899 best=0.92981
+[I 2026-11-18 11:59:42,256] Trial 17 pruned. 
+trial  17 PRUNED    value=0.93488 best=0.92981
+[I 2026-11-18 12:01:00,954] Trial 18 finished with value: 0.9298707671280748 and parameters: {'n_estimators': 400, 'learning_rate': 0.035037016627794175, 'max_depth': 12, 'min_child_weight': 9.18231347883462, 'subsample': 0.8001835270561767, 'colsample_bytree': 0.8161869148206772, 'reg_lambda': 0.1275443396069335, 'reg_alpha': 0.0028291361294397323}. Best is trial 18 with value: 0.9298707671280748.
+trial  18 COMPLETE  value=0.92987 best=0.92987
+[I 2026-11-18 12:02:28,633] Trial 19 finished with value: 0.9295758962478422 and parameters: {'n_estimators': 450, 'learning_rate': 0.035633729227732745, 'max_depth': 12, 'min_child_weight': 8.69567672117242, 'subsample': 0.8890237577958733, 'colsample_bytree': 0.7938830325339374, 'reg_lambda': 0.0345996451725527, 'reg_alpha': 0.012388501038025676}. Best is trial 18 with value: 0.9298707671280748.
+trial  19 COMPLETE  value=0.92958 best=0.92987
+[I 2026-11-18 12:02:58,015] Trial 20 pruned. 
+trial  20 PRUNED    value=0.93580 best=0.92987
+[I 2026-11-18 12:03:26,467] Trial 21 pruned. 
+trial  21 PRUNED    value=0.93605 best=0.92987
+[I 2026-11-18 12:03:53,911] Trial 22 pruned. 
+trial  22 PRUNED    value=0.93527 best=0.92987
+[I 2026-11-18 12:04:56,984] Trial 23 finished with value: 0.9295208765545471 and parameters: {'n_estimators': 400, 'learning_rate': 0.044612195255683586, 'max_depth': 11, 'min_child_weight': 5.620020124609114, 'subsample': 0.6519143026550377, 'colsample_bytree': 0.7888206620260159, 'reg_lambda': 0.37051580954733154, 'reg_alpha': 0.0012917171902008084}. Best is trial 18 with value: 0.9298707671280748.
+trial  23 COMPLETE  value=0.92952 best=0.92987
+[I 2026-11-18 12:05:59,303] Trial 24 finished with value: 0.9294216517501702 and parameters: {'n_estimators': 400, 'learning_rate': 0.03556666703397226, 'max_depth': 12, 'min_child_weight': 16.192634822672904, 'subsample': 0.8100174495630618, 'colsample_bytree': 0.913721606942015, 'reg_lambda': 0.03456892004023412, 'reg_alpha': 0.09610075148065658}. Best is trial 18 with value: 0.9298707671280748.
+trial  24 COMPLETE  value=0.92942 best=0.92987
+[I 2026-11-18 12:06:22,198] Trial 25 pruned. 
+trial  25 PRUNED    value=0.93610 best=0.92987
+[I 2026-11-18 12:07:22,743] Trial 26 finished with value: 0.9293525185651973 and parameters: {'n_estimators': 500, 'learning_rate': 0.03223985997857975, 'max_depth': 8, 'min_child_weight': 4.073784272662578, 'subsample': 0.8218998482632602, 'colsample_bytree': 0.8262723364382221, 'reg_lambda': 0.7924612999966627, 'reg_alpha': 0.011726567740637635}. Best is trial 18 with value: 0.9298707671280748.
+trial  26 COMPLETE  value=0.92935 best=0.92987
+[I 2026-11-18 12:08:22,511] Trial 27 finished with value: 0.9297780249458956 and parameters: {'n_estimators': 350, 'learning_rate': 0.03227046599634663, 'max_depth': 12, 'min_child_weight': 9.034675022275417, 'subsample': 0.9061295495703777, 'colsample_bytree': 0.849059851890113, 'reg_lambda': 0.5881349722328185, 'reg_alpha': 0.03586119880435641}. Best is trial 18 with value: 0.9298707671280748.
+trial  27 COMPLETE  value=0.92978 best=0.92987
+[I 2026-11-18 12:09:26,254] Trial 28 finished with value: 0.9294061606067764 and parameters: {'n_estimators': 400, 'learning_rate': 0.031428825419591404, 'max_depth': 12, 'min_child_weight': 16.821839335017913, 'subsample': 0.8689303385951269, 'colsample_bytree': 0.8704529317074804, 'reg_lambda': 0.5411782761318186, 'reg_alpha': 0.019346676514654725}. Best is trial 18 with value: 0.9298707671280748.
+trial  28 COMPLETE  value=0.92941 best=0.92987
+[I 2026-11-18 12:09:52,237] Trial 29 pruned. 
+trial  29 PRUNED    value=0.93616 best=0.92987
+{
+ "model": "XGBoost",
+ "untuned": {
+  "cv_macro_f1": 0.9290033338021759,
+  "cv_top1": 0.8797465834284137,
+  "test_top1": 0.9006428683426541,
+  "test_macro_f1": 0.9395017375669317,
+  "test_log_loss": 0.06279755383729935,
+  "inference_ms_per_point": 0.005826058854051399,
+  "fit_seconds": 12.174710035324097
+ },
+ "tuned": {
+  "cv_macro_f1": 0.9298707671280748,
+  "cv_top1": 0.8805775731265877,
+  "test_top1": 0.9038833429153817,
+  "test_macro_f1": 0.9398643181584128,
+  "test_log_loss": 0.061836469918489456,
+  "inference_ms_per_point": 0.013042753603706008,
+  "fit_seconds": 16.45700478553772
+ },
+ "oof_tuned": {
+  "macro_f1": 0.9318563912412716,
+  "precision": 0.9014061292229346,
+  "recall": 0.8611913553431798,
+  "f1_pos": 0.88083997956146,
+  "accuracy": 0.970050351145848,
+  "log_loss": 0.07749948120853327,
+  "top1": 0.8847185710198595
+ },
+ "tuned_test_full": {
+  "macro_f1": 0.9398643181584128,
+  "precision": 0.910397570103596,
+  "recall": 0.8778765690376569,
+  "f1_pos": 0.8938413611310807,
+  "accuracy": 0.9750865441093768,
+  "log_loss": 0.061836469918489456,
+  "top1": 0.9038833429153817
+ }
+}
+done

@@ -109,10 +109,10 @@
   "top1": 0.8853812784194847,
   "continuity": 0.741469075242539
  },
- "fit_seconds": 11.056031227111816,
- "cv_total_seconds": 66.90625071525574,
- "inference_seconds_test": 0.44791603088378906,
- "inference_ms_per_point": 0.023410653367678308,
+ "fit_seconds": 10.529529809951782,
+ "cv_total_seconds": 60.29293704032898,
+ "inference_seconds_test": 0.35126185417175293,
+ "inference_ms_per_point": 0.0183589533356898,
  "confusion_test": [
   [
    138833,

@@ -1,0 +1,27 @@
+$ python scripts/01_eda.py
+split                student_test      train
+n_points     sum          19160.0   208417.0
+             median        1420.0     1529.0
+             max           3958.0    19313.0
+n_nodes      sum          90689.0  1933485.0
+             median        6596.5     9608.0
+             max          26635.0   155003.0
+n_arcs       sum         185041.0  3876904.0
+             median       13145.0    19526.5
+             max          56027.0   307392.0
+route_arcs   sum           3477.0    31336.0
+             median         250.0      280.0
+             max           1323.0     2266.0
+n_gaps_gt10s sum             27.0      590.0
+             median           0.0        0.5
+             max             24.0      215.0
+NaN total 0 | non-monotonic 0 | isolated nodes 0 | trips with >1 component 89 | route not connected 11
+                 20      30      40      60      80      100
+K \ radius_m                                                
+1             0.4512  0.4431  0.4402  0.4394  0.4394  0.4394
+3             0.0731  0.0568  0.0500  0.0482  0.0482  0.0482
+5             0.0485  0.0298  0.0223  0.0201  0.0201  0.0201
+8             0.0404  0.0198  0.0114  0.0089  0.0089  0.0089
+12            0.0388  0.0171  0.0085  0.0059  0.0059  0.0059
+20            0.0378  0.0157  0.0064  0.0028  0.0028  0.0028
+EDA done.

@@ -6,8 +6,8 @@
   "test_top1": 0.9006428683426541,
   "test_macro_f1": 0.9395017375669317,
   "test_log_loss": 0.06279755383729935,
-  "inference_ms_per_point": 0.0057537345226289635,
-  "fit_seconds": 11.36932110786438
+  "inference_ms_per_point": 0.005826058854051399,
+  "fit_seconds": 12.174710035324097
  },
  "tuned": {
   "cv_macro_f1": 0.9298707671280748,
@@ -15,8 +15,8 @@
   "test_top1": 0.9038833429153817,
   "test_macro_f1": 0.9398643181584128,
   "test_log_loss": 0.061836469918489456,
-  "inference_ms_per_point": 0.01823907737630251,
-  "fit_seconds": 33.79425930976868
+  "inference_ms_per_point": 0.013042753603706008,
+  "fit_seconds": 16.45700478553772
  },
  "oof_tuned": {
   "macro_f1": 0.9318563912412716,

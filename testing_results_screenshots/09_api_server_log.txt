@@ -1,0 +1,43 @@
+$ uvicorn api.main:app --host 0.0.0.0 --port 8000   # server log on laptop 1
+2026-11-18 12:13:22,576 | INFO | Loaded model=XGBoost version=1.0 | HMM params={'beta': 6.152328666462676, 'lam': 0.2605561420618056, 'unreach_pen': 12.479073898375665, 'uturn_pen': 8.803049
+2026-11-18 12:13:30,670 | INFO | [1bd4e0e2] --> GET /health from 127.0.0.1
+2026-11-18 12:13:30,671 | INFO | [1bd4e0e2] <-- GET /health status=200 in 0.00s
+2026-11-18 12:13:30,672 | INFO | [a6f57caa] --> GET /trips from 127.0.0.1
+2026-11-18 12:13:30,673 | INFO | [a6f57caa] <-- GET /trips status=200 in 0.00s
+2026-11-18 12:13:30,674 | INFO | [d0975c8a] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:30,675 | INFO | PREDICT trip=00000000: loading raw GPS + road network (no labels)
+2026-11-18 12:13:30,831 | INFO | PIPELINE trip=00000000 points=2503 candidates=12501 | features 0.02s classifier 0.02s lattice 0.07s viterbi 0.05s
+2026-11-18 12:13:30,859 | INFO | RESULT trip=00000000 | point Top-1: classifier-only=0.9533 HMM=0.9724 | route F1=0.9969 continuity=0.9441 | total 0.18s
+2026-11-18 12:13:30,871 | INFO | [d0975c8a] <-- POST /predict status=200 in 0.20s
+2026-11-18 12:13:30,872 | INFO | [69b91695] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:30,873 | INFO | PREDICT trip=00000007: loading raw GPS + road network (no labels)
+2026-11-18 12:13:30,933 | INFO | PIPELINE trip=00000007 points=1354 candidates=5704 | features 0.01s classifier 0.01s lattice 0.03s viterbi 0.01s
+2026-11-18 12:13:30,945 | INFO | RESULT trip=00000007 | point Top-1: classifier-only=0.9838 HMM=1.0000 | route F1=0.9965 continuity=1.0000 | total 0.07s
+2026-11-18 12:13:30,949 | INFO | [69b91695] <-- POST /predict status=200 in 0.08s
+2026-11-18 12:13:30,951 | INFO | [05a887e9] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:30,951 | INFO | PREDICT trip=00000009: loading raw GPS + road network (no labels)
+2026-11-18 12:13:31,092 | INFO | PIPELINE trip=00000009 points=1049 candidates=11511 | features 0.03s classifier 0.02s lattice 0.07s viterbi 0.02s
+2026-11-18 12:13:31,139 | INFO | RESULT trip=00000009 | point Top-1: classifier-only=0.8808 HMM=0.9218 | route F1=0.9753 continuity=0.8587 | total 0.19s
+2026-11-18 12:13:31,156 | INFO | [05a887e9] <-- POST /predict status=200 in 0.21s
+2026-11-18 12:13:31,157 | INFO | [d6486558] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:31,157 | INFO | PREDICT trip=00000040: loading raw GPS + road network (no labels)
+2026-11-18 12:13:31,332 | INFO | PIPELINE trip=00000040 points=2995 candidates=16208 | features 0.03s classifier 0.02s lattice 0.09s viterbi 0.03s
+2026-11-18 12:13:31,386 | INFO | RESULT trip=00000040 | point Top-1: classifier-only=0.9426 HMM=0.9860 | route F1=0.9994 continuity=0.9532 | total 0.23s
+2026-11-18 12:13:31,425 | INFO | [d6486558] <-- POST /predict status=200 in 0.27s
+2026-11-18 12:13:31,427 | INFO | [2a4278ed] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:31,427 | INFO | PREDICT trip=00000052: loading raw GPS + road network (no labels)
+2026-11-18 12:13:31,457 | INFO | PIPELINE trip=00000052 points=262 candidates=2408 | features 0.01s classifier 0.00s lattice 0.02s viterbi 0.00s
+2026-11-18 12:13:31,462 | INFO | RESULT trip=00000052 | point Top-1: classifier-only=0.9847 HMM=1.0000 | route F1=0.9984 continuity=0.8765 | total 0.03s
+2026-11-18 12:13:31,464 | INFO | [2a4278ed] <-- POST /predict status=200 in 0.04s
+2026-11-18 12:13:31,465 | INFO | [908020e1] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:31,466 | INFO | PREDICT trip=00000056: loading raw GPS + road network (no labels)
+2026-11-18 12:13:31,870 | INFO | PIPELINE trip=00000056 points=3958 candidates=38008 | features 0.05s classifier 0.05s lattice 0.25s viterbi 0.06s
+2026-11-18 12:13:32,189 | INFO | RESULT trip=00000056 | point Top-1: classifier-only=0.9194 HMM=0.9781 | route F1=0.9872 continuity=0.8844 | total 0.72s
+2026-11-18 12:13:32,266 | INFO | [908020e1] <-- POST /predict status=200 in 0.80s
+2026-11-18 12:13:32,269 | INFO | [67b7d99d] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:32,269 | INFO | PREDICT trip=00000065: loading raw GPS + road network (no labels)
+2026-11-18 12:13:32,360 | INFO | PIPELINE trip=00000065 points=768 candidates=8294 | features 0.01s classifier 0.01s lattice 0.05s viterbi 0.01s
+2026-11-18 12:13:32,377 | INFO | RESULT trip=00000065 | point Top-1: classifier-only=0.8672 HMM=0.8867 | route F1=0.9912 continuity=0.8971 | total 0.11s
+2026-11-18 12:13:32,385 | INFO | [67b7d99d] <-- POST /predict status=200 in 0.12s
+2026-11-18 12:13:32,387 | INFO | [aad9066b] --> POST /predict from 127.0.0.1
+2026-11-18 12:13:32,387 | INFO | PREDICT trip=00000076: loading raw GPS + road network (no labels)

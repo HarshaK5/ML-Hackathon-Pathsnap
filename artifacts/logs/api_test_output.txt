@@ -1,4 +1,4 @@
-{'status': 'ok', 'model': 'XGBoost', 'version': '1.0', 'hmm_params': {'beta': 6.152328666462676, 'lam': 0.2605561420618056, 'unreach_pen': 12.479073898375665, 'uturn_pen': 8.803049874792027, 'switch_pen': 0.366
+{'status': 'ok', 'model': 'XGBoost', 'version': '1.0', 'hmm_params': {'beta': 6.152328666462676, 'lam': 0.2605561420618056, 'unreach_pen': 12.479073898375665, 'uturn_pen': 8.803049874792027, 'switch_p
 10 trips
 00000000  pts= 2503  top1 clf=0.9533 hmm=0.9724  routeF1=0.9969  continuity=0.9441  0.2s
 00000007  pts= 1354  top1 clf=0.9838 hmm=1.0000  routeF1=0.9965  continuity=1.0000  0.1s
@@ -8,5 +8,5 @@
 00000056  pts= 3958  top1 clf=0.9194 hmm=0.9781  routeF1=0.9872  continuity=0.8844  0.8s
 00000065  pts=  768  top1 clf=0.8672 hmm=0.8867  routeF1=0.9912  continuity=0.8971  0.1s
 00000076  pts= 1486  top1 clf=0.9260 hmm=0.9805  routeF1=0.9832  continuity=0.8783  0.4s
-00000077  pts= 3911  top1 clf=0.7988 hmm=0.9123  routeF1=0.9951  continuity=0.9000  0.4s
-00000091  pts=  874  top1 clf=0.9050 hmm=0.9348  routeF1=0.9871  continuity=0.8492  0.1s
+00000077  pts= 3911  top1 clf=0.7988 hmm=0.9123  routeF1=0.9951  continuity=0.9000  0.5s
+00000091  pts=  874  top1 clf=0.9050 hmm=0.9348  routeF1=0.9871  continuity=0.8492  0.2s

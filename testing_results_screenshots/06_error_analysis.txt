@@ -1,0 +1,8 @@
+$ python scripts/11_error_analysis.py
+correct                                          0.9039
+reverse arc (opposite direction, same street)    0.0394
+sibling arc (shares a node)                      0.0207
+other (not directly connected)                   0.0194
+adjacent arc (connected, same direction)         0.0167
+Name: proportion, dtype: float64
+points: 19133

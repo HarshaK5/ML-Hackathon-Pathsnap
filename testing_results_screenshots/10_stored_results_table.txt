@@ -1,0 +1,21 @@
+$ python scripts/demo_train_models.py --saved
+STORED RESULTS (5-fold GROUP cross-validation on 80 training trips, final fit on all 80, evaluated on 10 student-test trips)
+Metrics:  Macro-F1 = F1 averaged over both classes (true-road / not-true-road; only ~12% of candidates are true)
+          Top-1    = per GPS point, is the highest-scored candidate road the reference road?  (the map-matching accuracy)
+          LogLoss  = quality of the predicted probabilities (lower is better; they feed the HMM later)
+----------------------------------------------------------------------------------------------------------------------
+       Model       Algorithm family  CV Macro F1 (mean)  CV Macro F1 (std) CV Top-1  Test Macro F1 Test Top-1  Test Log Loss  Fit time (s)
+     XGBoost               Boosting              0.9290             0.0159   87.97%         0.9395     90.06%         0.0628       12.1747
+         MLP         Neural network              0.9220             0.0163   87.02%         0.9320      89.1%         0.0710       47.0687
+      HistGB               Boosting              0.9269             0.0156    87.4%         0.9316     88.99%         0.0725       38.7456
+RandomForest     Ensemble (bagging)              0.9280             0.0158   87.58%         0.9328     88.56%         0.0680       39.1498
+    LightGBM               Boosting              0.9260             0.0154   86.97%         0.9331     88.54%         0.0864       10.5295
+DecisionTree             Tree-based              0.9195             0.0174   86.41%         0.9257     87.61%         0.1116       28.4561
+  ExtraTrees     Ensemble (bagging)              0.9199             0.0173   86.93%         0.9220     87.46%         0.0826        8.4296
+      LogReg Linear / probabilistic              0.9088             0.0154   85.57%         0.9138     86.22%         0.0956        1.2631
+         KNN         Instance-based              0.8993             0.0174    84.7%         0.9071     85.85%         0.1121        0.0351
+  GaussianNB Linear / probabilistic              0.8249             0.0062   83.24%         0.8188      81.4%         0.8449        0.1354
+----------------------------------------------------------------------------------------------------------------------
+Best model: XGBoost (highest cross-validated Macro-F1).  Bayesian tuning (30 Optuna trials):
+   CV Macro-F1 0.9290 -> 0.9299 | test Top-1 90.06% -> 90.39% | test log loss 0.0628 -> 0.0618
+
