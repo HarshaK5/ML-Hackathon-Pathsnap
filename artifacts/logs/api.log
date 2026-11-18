@@ -1,0 +1,64 @@
+2026-11-18 11:00:59,328 | INFO | Loaded model=XGBoost version=1.0 | HMM params={'beta': 6.152328666462676, 'lam': 0.2605561420618056, 'unreach_pen': 12.479073898375665, 'uturn_pen': 8.803049874792027, 'switch_pen': 0.3661147045343365, 'gap_thresh': 33.74919932578605} | trips dir=/Users/darshangs/Desktop/ML hackathon /Student folder/student_test
+2026-11-18 11:01:06,455 | INFO | [75d9b2fc] --> GET /health from 127.0.0.1
+2026-11-18 11:01:06,456 | INFO | [75d9b2fc] <-- GET /health status=200 in 0.00s
+2026-11-18 11:01:06,457 | INFO | [cc83b12d] --> GET /trips from 127.0.0.1
+2026-11-18 11:01:06,460 | INFO | [cc83b12d] <-- GET /trips status=200 in 0.00s
+2026-11-18 11:01:06,460 | INFO | [cee73120] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:06,462 | INFO | PREDICT trip=00000000: loading raw GPS + road network (no labels)
+2026-11-18 11:01:06,622 | INFO | PIPELINE trip=00000000 points=2503 candidates=12501 | features 0.02s classifier 0.02s lattice 0.07s viterbi 0.04s
+2026-11-18 11:01:06,652 | INFO | RESULT trip=00000000 | point Top-1: classifier-only=0.9533 HMM=0.9724 | route F1=0.9969 continuity=0.9441 | total 0.19s
+2026-11-18 11:01:06,663 | INFO | [cee73120] <-- POST /predict status=200 in 0.20s
+2026-11-18 11:01:06,665 | INFO | [eb6b9897] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:06,665 | INFO | PREDICT trip=00000007: loading raw GPS + road network (no labels)
+2026-11-18 11:01:06,726 | INFO | PIPELINE trip=00000007 points=1354 candidates=5704 | features 0.01s classifier 0.01s lattice 0.03s viterbi 0.01s
+2026-11-18 11:01:06,737 | INFO | RESULT trip=00000007 | point Top-1: classifier-only=0.9838 HMM=1.0000 | route F1=0.9965 continuity=1.0000 | total 0.07s
+2026-11-18 11:01:06,741 | INFO | [eb6b9897] <-- POST /predict status=200 in 0.08s
+2026-11-18 11:01:06,742 | INFO | [a5ac14f3] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:06,743 | INFO | PREDICT trip=00000009: loading raw GPS + road network (no labels)
+2026-11-18 11:01:06,872 | INFO | PIPELINE trip=00000009 points=1049 candidates=11511 | features 0.02s classifier 0.02s lattice 0.07s viterbi 0.02s
+2026-11-18 11:01:06,921 | INFO | RESULT trip=00000009 | point Top-1: classifier-only=0.8808 HMM=0.9218 | route F1=0.9753 continuity=0.8587 | total 0.18s
+2026-11-18 11:01:06,937 | INFO | [a5ac14f3] <-- POST /predict status=200 in 0.19s
+2026-11-18 11:01:06,938 | INFO | [79dbfc38] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:06,939 | INFO | PREDICT trip=00000040: loading raw GPS + road network (no labels)
+2026-11-18 11:01:07,121 | INFO | PIPELINE trip=00000040 points=2995 candidates=16208 | features 0.03s classifier 0.03s lattice 0.09s viterbi 0.03s
+2026-11-18 11:01:07,180 | INFO | RESULT trip=00000040 | point Top-1: classifier-only=0.9426 HMM=0.9860 | route F1=0.9994 continuity=0.9532 | total 0.24s
+2026-11-18 11:01:07,218 | INFO | [79dbfc38] <-- POST /predict status=200 in 0.28s
+2026-11-18 11:01:07,219 | INFO | [79bdc305] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:07,220 | INFO | PREDICT trip=00000052: loading raw GPS + road network (no labels)
+2026-11-18 11:01:07,251 | INFO | PIPELINE trip=00000052 points=262 candidates=2408 | features 0.01s classifier 0.01s lattice 0.02s viterbi 0.00s
+2026-11-18 11:01:07,256 | INFO | RESULT trip=00000052 | point Top-1: classifier-only=0.9847 HMM=1.0000 | route F1=0.9984 continuity=0.8765 | total 0.04s
+2026-11-18 11:01:07,258 | INFO | [79bdc305] <-- POST /predict status=200 in 0.04s
+2026-11-18 11:01:07,260 | INFO | [d931ffd8] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:07,260 | INFO | PREDICT trip=00000056: loading raw GPS + road network (no labels)
+2026-11-18 11:01:07,655 | INFO | PIPELINE trip=00000056 points=3958 candidates=38008 | features 0.05s classifier 0.05s lattice 0.23s viterbi 0.05s
+2026-11-18 11:01:07,985 | INFO | RESULT trip=00000056 | point Top-1: classifier-only=0.9194 HMM=0.9781 | route F1=0.9872 continuity=0.8844 | total 0.72s
+2026-11-18 11:01:08,064 | INFO | [d931ffd8] <-- POST /predict status=200 in 0.80s
+2026-11-18 11:01:08,067 | INFO | [d7f51f89] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:08,067 | INFO | PREDICT trip=00000065: loading raw GPS + road network (no labels)
+2026-11-18 11:01:08,160 | INFO | PIPELINE trip=00000065 points=768 candidates=8294 | features 0.02s classifier 0.01s lattice 0.05s viterbi 0.01s
+2026-11-18 11:01:08,177 | INFO | RESULT trip=00000065 | point Top-1: classifier-only=0.8672 HMM=0.8867 | route F1=0.9912 continuity=0.8971 | total 0.11s
+2026-11-18 11:01:08,185 | INFO | [d7f51f89] <-- POST /predict status=200 in 0.12s
+2026-11-18 11:01:08,187 | INFO | [08f28722] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:08,187 | INFO | PREDICT trip=00000076: loading raw GPS + road network (no labels)
+2026-11-18 11:01:08,462 | INFO | PIPELINE trip=00000076 points=1486 candidates=16635 | features 0.04s classifier 0.02s lattice 0.14s viterbi 0.07s
+2026-11-18 11:01:08,563 | INFO | RESULT trip=00000076 | point Top-1: classifier-only=0.9260 HMM=0.9805 | route F1=0.9832 continuity=0.8783 | total 0.38s
+2026-11-18 11:01:08,619 | INFO | [08f28722] <-- POST /predict status=200 in 0.43s
+2026-11-18 11:01:08,621 | INFO | [dcc6e51f] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:08,621 | INFO | PREDICT trip=00000077: loading raw GPS + road network (no labels)
+2026-11-18 11:01:08,948 | INFO | PIPELINE trip=00000077 points=3911 candidates=39996 | features 0.05s classifier 0.05s lattice 0.19s viterbi 0.04s
+2026-11-18 11:01:09,032 | INFO | RESULT trip=00000077 | point Top-1: classifier-only=0.7988 HMM=0.9123 | route F1=0.9951 continuity=0.9000 | total 0.41s
+2026-11-18 11:01:09,065 | INFO | [dcc6e51f] <-- POST /predict status=200 in 0.44s
+2026-11-18 11:01:09,067 | INFO | [2a8cd6f2] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:09,067 | INFO | PREDICT trip=00000091: loading raw GPS + road network (no labels)
+2026-11-18 11:01:09,167 | INFO | PIPELINE trip=00000091 points=874 candidates=8849 | features 0.02s classifier 0.02s lattice 0.05s viterbi 0.01s
+2026-11-18 11:01:09,196 | INFO | RESULT trip=00000091 | point Top-1: classifier-only=0.9050 HMM=0.9348 | route F1=0.9871 continuity=0.8492 | total 0.13s
+2026-11-18 11:01:09,210 | INFO | [2a8cd6f2] <-- POST /predict status=200 in 0.14s
+2026-11-18 11:01:28,054 | INFO | [6faa4e30] --> GET /health from 127.0.0.1
+2026-11-18 11:01:28,055 | INFO | [6faa4e30] <-- GET /health status=200 in 0.00s
+2026-11-18 11:01:28,056 | INFO | [3ac37134] --> GET /trips from 127.0.0.1
+2026-11-18 11:01:28,058 | INFO | [3ac37134] <-- GET /trips status=200 in 0.00s
+2026-11-18 11:01:28,062 | INFO | [491417dd] --> POST /predict from 127.0.0.1
+2026-11-18 11:01:28,063 | INFO | PREDICT trip=00000040: loading raw GPS + road network (no labels)
+2026-11-18 11:01:28,264 | INFO | PIPELINE trip=00000040 points=2995 candidates=16208 | features 0.05s classifier 0.02s lattice 0.09s viterbi 0.03s
+2026-11-18 11:01:28,323 | INFO | RESULT trip=00000040 | point Top-1: classifier-only=0.9426 HMM=0.9860 | route F1=0.9994 continuity=0.9532 | total 0.26s
+2026-11-18 11:01:28,341 | INFO | [491417dd] <-- POST /predict status=200 in 0.28s

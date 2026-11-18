@@ -1,0 +1,6 @@
+,fraction
+correct,0.9038833429153817
+"reverse arc (opposite direction, same street)",0.039356086342967646
+sibling arc (shares a node),0.020697224690325616
+other (not directly connected),0.019390581717451522
+"adjacent arc (connected, same direction)",0.01667276433387341

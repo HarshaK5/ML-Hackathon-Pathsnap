@@ -1,0 +1,10 @@
+correct                                          0.9039
+reverse arc (opposite direction, same street)    0.0394
+sibling arc (shares a node)                      0.0207
+other (not directly connected)                   0.0194
+adjacent arc (connected, same direction)         0.0167
+Name: proportion, dtype: float64
+points: 19133
+/Users/darshangs/Desktop/ML hackathon /pathsnap/.venv/lib/python3.11/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+saved curves

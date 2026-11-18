@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# large regenerated artefacts (rebuild with scripts/02_build_dataset.py)
+artifacts/data/
+# big baseline models from the comparison (re-trainable with scripts/03_train_compare.py)
+artifacts/models/RandomForest.joblib
+artifacts/models/ExtraTrees.joblib
+artifacts/models/DecisionTree.joblib
+artifacts/models/KNN.joblib
+# raw dataset is provided by the organisers - do not commit
+Student folder/

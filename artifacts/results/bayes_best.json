@@ -1,0 +1,21 @@
+{
+ "model": "XGBoost",
+ "best_params": {
+  "n_estimators": 400,
+  "learning_rate": 0.035037016627794175,
+  "max_depth": 12,
+  "min_child_weight": 9.18231347883462,
+  "subsample": 0.8001835270561767,
+  "colsample_bytree": 0.8161869148206772,
+  "reg_lambda": 0.1275443396069335,
+  "reg_alpha": 0.0028291361294397323
+ },
+ "best_cv_macro_f1": 0.9298707671280748,
+ "n_trials": 30,
+ "n_complete": 23,
+ "n_pruned": 7,
+ "optimisation_seconds": 1947.7348358631134,
+ "sampler": "TPE (Optuna)",
+ "pruner": "MedianPruner",
+ "seed": 42
+}

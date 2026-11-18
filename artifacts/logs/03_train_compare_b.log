@@ -1,0 +1,13 @@
+train rows 1432738 (185251 pts) | test rows 160034 (19133 pts) | pos rate 0.129
+  [XGBoost] fold 0: macroF1=0.9213 top1=0.8699 ll=0.0962
+  [XGBoost] fold 1: macroF1=0.9507 top1=0.9201 ll=0.0608
+  [XGBoost] fold 2: macroF1=0.9216 top1=0.8653 ll=0.0888
+  [XGBoost] fold 3: macroF1=0.9437 top1=0.8936 ll=0.0600
+  [XGBoost] fold 4: macroF1=0.9077 top1=0.8498 ll=0.0926
+== XGBoost: CV macroF1 0.9290±0.0159 | CV top1 0.8797 | TEST macroF1 0.9395 top1 0.9006 ll 0.0628 | train macroF1 0.9686 | fit 11s | inf 0.11s | total 60s
+  [MLP] fold 0: macroF1=0.9161 top1=0.8630 ll=0.1033
+  [MLP] fold 1: macroF1=0.9433 top1=0.9119 ll=0.0739
+  [MLP] fold 2: macroF1=0.9143 top1=0.8576 ll=0.0996
+  [MLP] fold 3: macroF1=0.9376 top1=0.8847 ll=0.0700
+  [MLP] fold 4: macroF1=0.8989 top1=0.8338 ll=0.1035
+== MLP: CV macroF1 0.9220±0.0163 | CV top1 0.8702 | TEST macroF1 0.9320 top1 0.8910 ll 0.0710 | train macroF1 0.9466 | fit 83s | inf 0.02s | total 367s

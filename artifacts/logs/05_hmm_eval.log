@@ -1,0 +1,64 @@
+tuning trips: 30
+lattices built in 8s
+tuning-set (OOF) top-1: classifier-only 0.8996 | HMM default params 0.9340
+best HMM params HMMParams(beta=6.152328666462676, lam=0.2605561420618056, unreach_pen=12.479073898375665, uturn_pen=8.803049874792027, switch_pen=0.3661147045343365, gap_thresh=33.74919932578605) tuning-set top-1 0.9430765968475366
+00000000: top1 clf 0.9533 -> hmm 0.9724 | cont 0.760 -> 0.944 | route F1 0.961 -> 0.997
+00000007: top1 clf 0.9838 -> hmm 1.0000 | cont 0.987 -> 1.000 | route F1 0.984 -> 0.997
+00000009: top1 clf 0.8808 -> hmm 0.9218 | cont 0.747 -> 0.859 | route F1 0.858 -> 0.975
+00000040: top1 clf 0.9426 -> hmm 0.9860 | cont 0.806 -> 0.953 | route F1 0.900 -> 0.999
+00000052: top1 clf 0.9847 -> hmm 1.0000 | cont 0.829 -> 0.877 | route F1 0.794 -> 0.998
+00000056: top1 clf 0.9194 -> hmm 0.9781 | cont 0.754 -> 0.884 | route F1 0.868 -> 0.987
+00000065: top1 clf 0.8672 -> hmm 0.8867 | cont 0.826 -> 0.897 | route F1 0.799 -> 0.991
+00000076: top1 clf 0.9260 -> hmm 0.9805 | cont 0.718 -> 0.878 | route F1 0.745 -> 0.983
+00000077: top1 clf 0.7988 -> hmm 0.9123 | cont 0.758 -> 0.900 | route F1 0.833 -> 0.995
+00000091: top1 clf 0.9050 -> hmm 0.9348 | cont 0.728 -> 0.849 | route F1 0.791 -> 0.987
+{
+ "tuning_set_top1": {
+  "classifier_only": 0.8995594090898381,
+  "hmm_default": 0.9340291685319134,
+  "hmm_tuned": 0.9430765968475366,
+  "n_trips": 30,
+  "n_points": 42443
+ },
+ "hmm_params": {
+  "beta": 6.152328666462676,
+  "lam": 0.2605561420618056,
+  "unreach_pen": 12.479073898375665,
+  "uturn_pen": 8.803049874792027,
+  "switch_pen": 0.3661147045343365,
+  "gap_thresh": 33.74919932578605
+ },
+ "hmm_tuning": {
+  "n_trials": 60,
+  "sampler": "TPE",
+  "objective": "pooled point top-1 accuracy on OOF probabilities"
+ },
+ "clf": {
+  "point_top1_accuracy": 0.9038833429153817,
+  "route_continuity": 0.7799405623323911,
+  "route_precision": 0.7760433065579428,
+  "route_recall": 0.9968693709956228,
+  "route_f1": 0.8688970206041606,
+  "route_seq_sim": 0.48686679293891116,
+  "macro_trip_top1": 0.9161479842251827
+ },
+ "hmm_default": {
+  "point_top1_accuracy": 0.9456436523284377,
+  "route_continuity": 0.9011038327595047,
+  "route_precision": 0.9699437485126992,
+  "route_recall": 0.9976108587609053,
+  "route_f1": 0.9833236756679381,
+  "route_seq_sim": 0.9398990512039868,
+  "macro_trip_top1": 0.9484057655449438
+ },
+ "hmm": {
+  "point_top1_accuracy": 0.9584487534626038,
+  "route_continuity": 0.911249838129182,
+  "route_precision": 0.9859343007434607,
+  "route_recall": 0.9982177437320866,
+  "route_f1": 0.9920021724627939,
+  "route_seq_sim": 0.970575789188447,
+  "macro_trip_top1": 0.9572647163463254
+ }
+}
+bundle saved
