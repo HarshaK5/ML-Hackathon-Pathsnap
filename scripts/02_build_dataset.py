@@ -53,8 +53,8 @@ if __name__ == "__main__":
         print(st.to_string(index=False))
         pairs = pd.concat([r[0] for r in res], ignore_index=True)
         pts = pd.concat([r[1] for r in res], ignore_index=True)
-        pairs.to_parquet(OUT / f"{split}_pairs.parquet")
-        pts.to_parquet(OUT / f"{split}_points.parquet")
+        pairs.to_parquet(OUT / f"{split}_pairs.parquet", compression="zstd", compression_level=19)  # <100 MB so it fits on GitHub
+        pts.to_parquet(OUT / f"{split}_points.parquet", compression="zstd", compression_level=19)
         v = pts[pts.valid]
         print(f"saved -> {OUT / (split + '_pairs.parquet')} , {OUT / (split + '_points.parquet')}")
         print(f"{split}: trips={len(ids)} points={len(pts)} pairs={len(pairs)} positives={int(pairs.y.sum())} "
